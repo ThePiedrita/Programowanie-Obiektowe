@@ -9,13 +9,15 @@ public class Main {
         Cat kot = new Cat("Filemon");
         kot.makeNoise();*/
 
-        /*Pojazd pojazd = new Pojazd();
+       /*Pojazd pojazd = new Pojazd();
         Samochod samochod = new Samochod();
         pojazd.jedz();
         samochod.jedz();*/
+       /* Hammer hammer = new Hammer("młotek");*/
+
 
         KalkulatorRozszerzony kalkulator = new KalkulatorRozszerzony();
-        System.out.println(kalkulator.dodaj(2,3,4));
+        System.out.println(kalkulator.dodaj(2,3,1));
 
         /*Programista programista = new Programista();
         System.out.println(programista);*/
