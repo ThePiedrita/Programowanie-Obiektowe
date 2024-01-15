@@ -6,10 +6,19 @@ public class Main {
     public static void main(String[] args) {
         int[] tab1 = {1,2,3};
         int[] tab2 = {4,5,6};
-        ArrayList<Integer> wynik = mergeArrays(tab1,tab2);
-        System.out.println(wynik);
-        StringBuilder zdanie = new StringBuilder("Ala3mA51oTa");
-        System.out.println(zdanie);
+       //ArrayList<Integer> wynik = mergeArrays(tab1,tab2);
+        //System.out.println(wynik);
+        //StringBuilder zdanie = new StringBuilder("Ala3mA51oTa");
+        //capitalizeEverySecond(zdanie);
+        //System.out.println(zdanie);
+        Musician muzyk = new Musician("muzyk","fajny");
+        Guitarist gitarzysta = new Guitarist("gitarzysta","super","elektryk");
+        System.out.println(muzyk.toString());
+        System.out.println(gitarzysta.toString());
+        StringBuilder piosenka = muzyk.writeSong(4);
+        StringBuilder piosenkaGitarowa = gitarzysta.writeSong(4);
+        System.out.println(piosenka);
+        System.out.println(piosenkaGitarowa);
     }
     /*public static void mergeArrays(int[] tab1, int[] tab2){
         int[] merge = new int[tab1.length+ tab2.length];
@@ -27,6 +36,14 @@ public class Main {
             System.out.println(a);
         }
     }*/
+    public static void capitalizeEverySecond(StringBuilder zdanie)
+    {
+        for(int i = 1 ; i < zdanie.length(); i += 2)
+        {
+            zdanie.setCharAt(i,Character.toUpperCase(zdanie.charAt(i)));
+            //zrozumiec setChar at i charAt
+        }
+    }
     public static ArrayList<Integer> mergeArrays(int[] tab1, int[] tab2) {
         ArrayList<Integer> wynik = new ArrayList<>();
         for (int i = 0; i < tab1.length; i++) {
