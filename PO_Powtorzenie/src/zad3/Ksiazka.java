@@ -18,4 +18,13 @@ public class Ksiazka implements Comparator<Ksiazka> {
     public int compare(Ksiazka o1, Ksiazka o2) {
         return Integer.compare(o1.rokWydania,o2.rokWydania);
     }
+
+    @Override
+    public String toString() {
+        return "Ksiazka{" +
+                "tytul='" + tytul + '\'' +
+                ", cena=" + cena +
+                ", rokWydania=" + rokWydania +
+                '}';
+    }
 }

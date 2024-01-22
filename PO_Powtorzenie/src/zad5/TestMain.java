@@ -6,7 +6,7 @@ public class TestMain {
         System.out.println(findLargest(c1));
     }
     public static Shape findLargest(ElementPair<? extends Shape>pair){
-        if(Integer.compare(pair.obj1.size,pair.obj2.size)<0){
+        if(Integer.compare(pair.obj1.size,pair.obj2.size)>0){
             return pair.obj1;
         }
         return pair.obj2;
